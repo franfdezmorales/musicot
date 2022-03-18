@@ -1,0 +1,22 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.icon {
+    color: var(--color-green);
+    font-size: 4em;
+}
+
+.textError {
+    color: var(--color-green);
+    font-size: 2em;
+}
+
+.textErrorSecondary {
+    color: var(--color-green);
+    font-size: 0.75em;
+}

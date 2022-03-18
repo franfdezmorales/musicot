@@ -1,0 +1,7 @@
+.addSong {
+    padding: 3em 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em; 
+}

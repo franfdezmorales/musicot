@@ -1,0 +1,18 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em; 
+    position: relative;
+    cursor: pointer;
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+.profile span {
+    color: white; 
+    font-size: 0.9em;
+    font-weight: bold;
+}

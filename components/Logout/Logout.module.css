@@ -1,0 +1,33 @@
+.container {
+    min-width: 10em;
+    padding: 0.5em; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em; 
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    background-color: var(--color-gray);
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.icon {
+    color: var(--color-white); 
+    font-size: 1.2em;
+}
+
+.container span {
+    font-size: 0.9em;
+    color: var(--color-white); 
+}
+
+.container:hover > span {
+    opacity: 0.8;
+}
+
+.container:hover > .icon {
+    opacity: 0.8;
+}

@@ -1,0 +1,16 @@
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em; 
+}
+
+.item span {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.item:hover {
+    opacity: 0.8;
+}

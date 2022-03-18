@@ -1,0 +1,52 @@
+.player {
+    margin-top: 1.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em; 
+}
+
+.volume {
+    height: 0.25em;
+    -webkit-appearance: none;
+    width: 10em;
+    border-radius: 0.25em;
+    background-color: var(--color-gray);
+}
+
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: var(--color-white);
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume::-webkit-slider-thumb:hover {
+    background-color: var(--color-green);
+}
+
+.volumeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em; 
+}
+
+.timer {
+    width: 50%;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.infoSong {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em; 
+}

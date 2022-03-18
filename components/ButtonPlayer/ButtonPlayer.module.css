@@ -1,0 +1,37 @@
+.buttonContainer {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buttonPlayer {
+    background-color: var(--color-green);
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonPlayerDisabled {
+    background-color: var(--color-green);
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.buttonPlayer:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: var(--color-white);
+    font-size: 3.5em;
+}

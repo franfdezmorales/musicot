@@ -1,0 +1,18 @@
+.noResults {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.icon {
+    color: var(--color-green);
+    font-size: 4em;
+}
+
+.text {
+    color: var(--color-green);
+    font-size: 2em;
+}
+

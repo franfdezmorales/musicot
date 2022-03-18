@@ -1,0 +1,16 @@
+.login {
+    width: max-content;
+    padding: 0.5em; 
+    background-color: var(--color-green);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em; 
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.login:hover {
+    opacity: 0.8;
+}
