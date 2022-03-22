@@ -1,34 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Musico-T
+A project to union music and people into a simple webpage. Built on [Next.js](https://nextjs.org/) and shared on [Vercel](https://vercel.com), data are provided by [Spotify API](https://developer.spotify.com/).
+
+## Features
+
+ - See the collaborative playlist of the group.
+ - Add new songs to the playlist.
+ - Follow all the people who is registered.
+ - Song of the day.
+ - Play a preview of each song.
+ - Login with spotify.
 
 ## Getting Started
-
-First, run the development server:
-
+First, clone this [project](https://github.com/franfdezmorales/musicot):
 ```bash
-npm run dev
-# or
-yarn dev
+cd <directory>
+git clone https://github.com/franfdezmorales/musicot.git 
 ```
-
+Install all the dependencies: 
+```bash
+npm install 
+# or
+yarn install
+```
+Fill all the environment variables: 
+```bash
+# .env
+DATABASE_URL
+NEXTAUTH_URL
+# .env.local
+SPOTIFY_CLIENT_ID
+SPOTIFY_CLIENT_SECRET
+SPOTIFY_PLAYLIST_ID
+SPOTIFY_MASTER_ACCOUNT
+```
+Update the prisma scheme to your db service: 
+```bash 
+npx prisma db push   
+```
+Run the development server: 
+```bash 
+npm run dev
+# or 
+yarn run dev
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
