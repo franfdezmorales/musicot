@@ -40,3 +40,26 @@
     font-weight: bold;
     color: var(--color-green);
 }
+
+@media only screen and (max-width: 768px) {
+    .songs {
+        height: 40em;
+        width: 90%;
+        padding: 1em;
+        border-radius: 0.5em;
+        background-color: var(--color-black);
+        display: block;
+    }
+    
+    .loading {
+        height: 40em;
+        width: 90%;
+        padding: 1em;
+        border-radius: 0.5em;
+        background-color: var(--color-black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

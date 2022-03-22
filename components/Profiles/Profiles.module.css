@@ -24,3 +24,29 @@
 .profiles::-webkit-scrollbar {
     display: none;
 }
+
+@media only screen and (max-width: 768px) {
+    .profiles {
+        height: 40em;
+        width: 90%;
+        padding: 1em;
+        border-radius: 0.5em;
+        background-color: var(--color-black);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 1em; 
+        overflow-y: scroll;
+    }
+    
+    .loading {
+        height: 40em;
+        width: 90%;
+        padding: 1em;
+        border-radius: 0.5em;
+        background-color: var(--color-black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

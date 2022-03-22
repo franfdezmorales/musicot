@@ -22,8 +22,41 @@
     opacity: .8;
 }
 
-.follow span {
-    font-size: 1em !important;
+.followText {
+    display: block;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .follow {
+        background-color: var(--color-green);
+        border-radius: 9999em;
+        padding: 0.5em; 
+        color: var(--color-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em; 
+        cursor: pointer;
+    }
+    
+    .followDisabled {
+        background-color: var(--color-green);
+        border-radius: 9999em;
+        padding: 0.5em; 
+        color: var(--color-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em; 
+        opacity: .8;
+    }
+    
+    .followText {
+        display: none;
+    }
+
 }
 
 

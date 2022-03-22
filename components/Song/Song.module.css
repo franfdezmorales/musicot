@@ -40,3 +40,52 @@
     color: var(--color-gray);
     font-size: 0.6em;
 }
+
+@media only screen and (max-width: 768px) { 
+    .song {
+        min-height: 3.5em;
+        background-color: var(--color-light-black);
+        padding: 0.5em; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0.25em;
+        flex-grow: 1;
+        cursor: pointer;
+    }
+
+    .song:hover > .information span {
+        color: var(--color-green);
+    }
+    
+    .photo {
+        border-radius: 50%;
+    }
+    
+    .information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em; 
+    }
+    
+    .title {
+        text-align: center;
+        font-weight: bold;
+        color: var(--color-white);
+    }
+    
+    .artists {
+        text-align: center;
+        font-weight: bold;
+        color: var(--color-white);
+        font-size: 0.8em;
+    }
+    
+    .user {
+        text-align: center;
+        color: var(--color-gray);
+        font-size: 0.6em;
+    }
+}

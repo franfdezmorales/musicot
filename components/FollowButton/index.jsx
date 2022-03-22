@@ -17,7 +17,7 @@ export function FollowButton({setFollowing, following, id}) {
     return (
         <div className={following ? styles.followDisabled : styles.follow} onClick={handleFollow}>
             <FaSpotify size='1.2em' />
-            <span>{following ?`Siguiendo` : `Seguir`}</span>
+            <span className={styles.followText}>{following ?`Siguiendo` : `Seguir`}</span>
         </div>
     )
 }

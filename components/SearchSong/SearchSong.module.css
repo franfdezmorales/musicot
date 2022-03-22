@@ -21,14 +21,24 @@
 }
 
 .title {
+    display: block;
     font-weight: bold;
     color: var(--color-white);
 }
 
 .artists {
+    display: block;
     font-weight: bold;
     color: var(--color-white);
     font-size: 0.8em;
+}
+
+.titleMobile {
+    display: none;
+}
+
+.artistsMobile {
+    display: none;
 }
 
 .addButon {
@@ -44,4 +54,69 @@
 
 .addButon:hover {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) { 
+    .song {
+        min-height: 3.5em;
+        background-color: var(--color-light-black);
+        padding: 0.5em; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        border-radius: 0.25em;
+        flex-grow: 1;
+    }
+    
+    .photo {
+        border-radius: 50%;
+    }
+    
+    .information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em; 
+    }
+    
+    .title {
+        display: none;
+    }
+    
+    .artists {
+        display: none;
+    }
+
+    .titleMobile {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        color: var(--color-white);
+        font-size: 0.9em;
+    }
+    
+    .artistsMobile {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        color: var(--color-white);
+        font-size: 0.75em;
+    }
+    
+    .addButon {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        background-color: var(--color-green);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .addButon:hover {
+        transform: scale(1.1);
+    }
+    
 }

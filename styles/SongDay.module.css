@@ -27,3 +27,45 @@
     align-items: center;
     justify-content: center;
 }
+
+.playerMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) { 
+    .songday {
+        padding: 3em 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+    }
+    
+    .loading {
+        padding: 3em 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+    }
+    
+    .player {
+        display: none;
+    }
+
+    .playerMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -11,11 +11,9 @@ export function NavBar() {
 
     return (
         <nav className={styles.navbar}>
-            <div className={styles.content}>
-                <Logo />
-                <NavMenu />
-                {session ? <UserProfile name={session?.user?.name} image={session?.user?.image} /> : <LoginButton />}
-            </div>
+            <Logo />
+            <NavMenu />
+            {session ? <UserProfile name={session?.user?.name} image={session?.user?.image} /> : <LoginButton />}
         </nav>
     )
 }

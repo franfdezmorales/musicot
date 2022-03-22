@@ -5,3 +5,13 @@
     border-radius: 0.5em;
     background-color: var(--color-black);
 }
+
+@media only screen and (max-width: 768px) {
+    .stats {
+        height: 25em;
+        width: 90%;
+        padding: 1em;
+        border-radius: 0.5em;
+        background-color: var(--color-black);
+    }
+}

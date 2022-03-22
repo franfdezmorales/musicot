@@ -9,6 +9,9 @@ export function Logo() {
                 <span className={styles.title}>
                     Musico-T
                 </span>
+                <span className={styles.titleMobile}>
+                    M-T
+                </span>
                 <span className={styles.devlogo}>
                     {`</>`}
                 </span>

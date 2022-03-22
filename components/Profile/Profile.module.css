@@ -30,3 +30,16 @@
     font-size: 2em;
     color: yellow;
 }
+
+@media only screen and (max-width: 768px) {
+    .profile {
+        max-height: 4.5em;
+        width: 100%;
+        background-color: var(--color-light-black);
+        padding: 0.5em; 
+        border-radius: 0.25em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

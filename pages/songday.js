@@ -30,6 +30,9 @@ export default function SongDay({search, number}) {
             <section className={styles.player}>
                 <iframe src={`https://open.spotify.com/embed/${type}/${id}`} width="500" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" />
             </section>
+            <section className={styles.playerMobile}>
+                <iframe src={`https://open.spotify.com/embed/${type}/${id}`} width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" />
+            </section>
         </div>
     )
 }

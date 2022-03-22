@@ -14,3 +14,20 @@
 .item:hover {
     opacity: 0.8;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25em; 
+    }
+
+    .item span {
+        font-size: 0.75em;
+        font-weight: bold;
+        color: var(--color-white);
+        text-align: center;
+    }
+}

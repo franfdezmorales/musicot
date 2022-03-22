@@ -21,3 +21,38 @@
 .logo:hover {
     opacity: 0.8;
 }
+
+.titleMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em; 
+        cursor: pointer;
+    }
+    
+    .title {
+        display: none;
+    }
+
+    .titleMobile {
+        font-size: 1.5em;
+        color: var(--color-white); 
+        font-weight: bold;
+        display: block;
+    }
+    
+    .devlogo {
+        font-size: 1.5em;
+        color: var(--color-green);
+        font-weight: bold;
+    }
+    
+    .logo:hover {
+        opacity: 0.8;
+    }
+}

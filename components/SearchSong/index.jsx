@@ -25,6 +25,8 @@ export function SearchSong({track, onAddSong}) {
             <div className={styles.information}>
                 <span className={styles.title}>{track.name}</span>
                 <span className={styles.artists}>{artists}</span>
+                <span className={styles.titleMobile}>{track.name.length > 20 ? `${track.name.substring(0, 20)}...` : track.name}</span>
+                <span className={styles.artistsMobile}>{artists.length > 20 ? `${artists.substring(0, 20)}...` : artists}</span>
             </div>
             <span className={styles.addButon} onClick={handleAddSong}>
                 <IoMdAdd color='white' size='1em' />
