@@ -4,6 +4,7 @@ import { useSongDay } from '../hooks/useSongDay'
 import { SongStats } from '../components/SongStats'
 import { Spinner } from '../components/Spinner'
 import { Error } from '../components/Error'
+import Head from 'next/head'
 
 const getEmbedData = (uri) => {
     const splittedData = uri.split(':')
@@ -23,6 +24,10 @@ export default function SongDay({search, number}) {
 
     return (
         <div className={styles.songday}>
+            <Head>
+                <title>Musico-T | Canción del día</title>
+                <meta property="og:title" content="Musico-T" key="title" />
+            </Head>
             <section className={styles.info}>
                 <DaySong track={song.song} />
                 <SongStats stats={song.songData} />
