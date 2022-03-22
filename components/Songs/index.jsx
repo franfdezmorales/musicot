@@ -11,7 +11,6 @@ export function Songs() {
     if (isLoading) return <div className={styles.loading}><Spinner /></div>
     if (!songs || isError) return <div className={styles.loading}><Error /></div>
 
-    console.log(songs.length)
 
     return (
         <div className={styles.songs}>

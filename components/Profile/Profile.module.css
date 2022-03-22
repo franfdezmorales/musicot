@@ -1,0 +1,32 @@
+.profile {
+    height: 4.5em;
+    background-color: var(--color-light-black);
+    padding: 0.5em; 
+    border-radius: 0.25em;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em; 
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+.profile span {
+    color: var(--color-white);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 2em;
+    color: yellow;
+}

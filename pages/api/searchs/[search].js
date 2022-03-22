@@ -1,6 +1,6 @@
 import { getSession } from "next-auth/react";
 import { getSongsFromSearch } from "../../../lib/spotify";
-import prisma from '../../../lib/prisma'
+import { getRefreshToken } from '../../../lib/prisma'
 
 
 export default async function getSearchSongs(req, res) {
@@ -9,11 +9,7 @@ export default async function getSearchSongs(req, res) {
     const { search } = req.query
 
     if (session) {
-        const { refresh_token } = await prisma.account.findUnique({
-            where: {
-                provider_providerAccountId: {provider: 'spotify', providerAccountId: session.user.name}
-            }
-        })
+        const refresh_token = await getRefreshToken(session.user.email)
     
         const songs = await getSongsFromSearch(refresh_token, search)
 

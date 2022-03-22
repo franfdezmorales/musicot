@@ -1,0 +1,26 @@
+.profiles {
+    height: 40em;
+    width: 60em;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: var(--color-black);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; 
+    overflow-y: scroll;
+}
+
+.loading {
+    height: 40em;
+    width: 60em;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profiles::-webkit-scrollbar {
+    display: none;
+}

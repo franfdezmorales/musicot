@@ -1,0 +1,37 @@
+.daySong {
+    width: 30em;
+    height: 25em;
+    padding: 1em; 
+    border-radius: 0.5em;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em; 
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+.title {
+    color: var(--color-white);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.author {
+    color: var(--color-white);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.songInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em; 
+}

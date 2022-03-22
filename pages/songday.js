@@ -1,19 +1,36 @@
-
-import { useEffect, useState } from 'react'
 import styles from '../styles/SongDay.module.css'
+import { DaySong } from '../components/DaySong'
+import { useSongDay } from '../hooks/useSongDay'
+import { SongStats } from '../components/SongStats'
+import { Spinner } from '../components/Spinner'
+import { Error } from '../components/Error'
+
+const getEmbedData = (uri) => {
+    const splittedData = uri.split(':')
+    
+    return { type: splittedData[1], id: splittedData[2] }
+}
 
 export default function SongDay({search, number}) {
 
-    const [song, setSong] = useState(false)
+    const { song, isLoading, isError } = useSongDay({search, number})
 
-    useEffect(() => {
-        fetch(`/api/songs/s=${search};n=${number}`)
-        .then(res => res.json())
-        .then(console.log)
-    }, [])
+
+    if (isLoading) return <div className={styles.loading}><Spinner /></div>
+    if (!song?.song || isError) return <div className={styles.loading}><Error /></div>
+
+    const { type, id } =  getEmbedData(song.song.uri)
 
     return (
-        <div />
+        <div className={styles.songday}>
+            <section className={styles.info}>
+                <DaySong track={song.song} />
+                <SongStats stats={song.songData} />
+            </section>
+            <section className={styles.player}>
+                <iframe src={`https://open.spotify.com/embed/${type}/${id}`} width="500" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" />
+            </section>
+        </div>
     )
 }
 
