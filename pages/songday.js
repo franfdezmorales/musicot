@@ -25,7 +25,7 @@ export default function SongDay({search, number}) {
     return (
         <div className={styles.songday}>
             <Head>
-                <title>Musico-T | Canción del dia</title>
+                <title>Musico-T | Canción recomendada</title>
                 <meta property="og:title" content="Musico-T" key="title" />
             </Head>
             <section className={styles.info}>

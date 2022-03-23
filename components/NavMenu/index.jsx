@@ -7,7 +7,7 @@ export function NavMenu() {
         <div className={styles.menu}>
             <NavItem title='Añadir canción' link='/addSong' image='/addsong.png' />
             <NavItem title='Social' link='/social' image='/social.png' />
-            <NavItem title='Canción del día' link='/songday' image='/song.png' />
+            <NavItem title='Canción recomendada' link='/songday' image='/song.png' />
         </div>
     )
 }
