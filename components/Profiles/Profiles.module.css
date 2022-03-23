@@ -6,6 +6,7 @@
     background-color: var(--color-black);
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     gap: 1em; 
     overflow-y: scroll;
 }
