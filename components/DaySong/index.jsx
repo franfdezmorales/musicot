@@ -1,6 +1,6 @@
 import styles from './DaySong.module.css'
 import Image from 'next/image'
-import { Player } from '../Player'
+import { FaSpotify } from 'react-icons/fa'
 
 const getArtists = (artists) => {
     let totalArtists = ''
@@ -25,6 +25,9 @@ export function DaySong({ track }) {
                 <span className={styles.title}>{track?.name}</span>
                 {<span className={styles.author}>{artists}</span>}
             </div>
+            <a href={track?.external_urls?.spotify} target='_blank' rel='noopener nofollow noreferrer'>
+                <FaSpotify className={styles.icon} />
+            </a>
         </div>
     )
 }

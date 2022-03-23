@@ -1,6 +1,7 @@
 import styles from './SearchSong.module.css'
 import Image from 'next/image'
 import { IoMdAdd } from 'react-icons/io'
+import { FaSpotify } from 'react-icons/fa'
 
 const getArtists = (artists) => {
     let totalArtists = ''
@@ -31,6 +32,9 @@ export function SearchSong({track, onAddSong}) {
             <span className={styles.addButon} onClick={handleAddSong}>
                 <IoMdAdd color='white' size='1em' />
             </span>
+            <a href={track?.external_urls?.spotify} target='_blank' rel='noopener nofollow noreferrer'>
+                <FaSpotify className={styles.icon} />
+            </a>
         </div>
     )
 

@@ -56,6 +56,15 @@
     transform: scale(1.1);
 }
 
+.icon {
+    color: var(--color-green);
+    font-size: 1.5em;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
 @media only screen and (max-width: 1400px) { 
     .song {
         min-height: 3.5em;

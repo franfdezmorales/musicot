@@ -1,6 +1,7 @@
 import styles from './Song.module.css'
 import Image from 'next/image'
 import { useSong } from '../../context/SongProvider'
+import { FaSpotify } from 'react-icons/fa'
 
 const getArtists = (artists) => {
     let totalArtists = ''
@@ -63,6 +64,9 @@ export function Song({track, date, author}) {
                 <span className={styles.artists}>{artists}</span>
                 <span className={styles.user}>{authorInfo}</span>
             </div>
+            <a href={track?.external_urls?.spotify} target='_blank' rel='noopener nofollow noreferrer'>
+                <FaSpotify className={styles.icon} />
+            </a>
         </div>
     )
 }
