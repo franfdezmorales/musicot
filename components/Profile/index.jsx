@@ -13,7 +13,7 @@ export function Profile({id, name, image, email, following}) {
     return (
         <div className={styles.profile}>
             <section className={styles.info}>
-                <Image src={image} width={50} height={50} alt={name} className={styles.photo}/>
+                <Image src={image ?? '/noavatar.png'} width={50} height={50} alt={name} className={styles.photo}/>
                 <span className={styles.name}>{name}</span>
             </section>
             {session?.user?.email !== email ? <FollowButton following={follow} id={id} setFollowing={setFollow}/> : <BsFillStarFill className={styles.icon}/>}

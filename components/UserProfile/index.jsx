@@ -13,7 +13,7 @@ export function UserProfile({name, image}) {
 
     return (
         <div className={styles.profile} onClick={handleShowLogout}>
-            <Image src={image} width={40} height={40} className={styles.photo} alt={name} />
+            <Image src={image ?? '/noavatar.png'} width={40} height={40} className={styles.photo} alt={name} />
             <span>{name}</span>
             {showLogout ? <Logout close={setShowLogout} /> : null}
         </div>

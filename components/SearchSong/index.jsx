@@ -21,7 +21,7 @@ export function SearchSong({track, onAddSong}) {
 
     return (
         <div className={styles.song}>
-            <Image src={track?.album?.images?.[0]?.url} width={40} height={40} className={styles.photo} alt='tst' />
+            <Image src={track?.album?.images?.[0]?.url ?? '/nosong.jpg'} width={40} height={40} className={styles.photo} alt='tst' />
             <div className={styles.information}>
                 <span className={styles.title}>{track.name}</span>
                 <span className={styles.artists}>{artists}</span>

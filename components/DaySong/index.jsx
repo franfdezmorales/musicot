@@ -20,7 +20,7 @@ export function DaySong({ track }) {
 
     return (
         <div className={styles.daySong}>
-            <Image src={track?.album?.images?.[0]?.url} alt='Song Image' width={175} height={175} className={styles.photo} />
+            <Image src={track?.album?.images?.[0]?.url ?? '/nosong.jpg'} alt='Song Image' width={175} height={175} className={styles.photo} />
             <div className={styles.songInfo}>
                 <span className={styles.title}>{track?.name}</span>
                 {<span className={styles.author}>{artists}</span>}
