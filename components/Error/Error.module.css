@@ -21,7 +21,7 @@
     font-size: 0.75em;
 }
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 1400px) { 
     .textError {
         color: var(--color-green);
         font-size: 2em;

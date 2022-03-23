@@ -31,7 +31,7 @@
     color: yellow;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1400px) {
     .profile {
         max-height: 4.5em;
         width: 100%;

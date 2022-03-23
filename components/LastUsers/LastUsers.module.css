@@ -41,7 +41,7 @@
     color: var(--color-green);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1400px) {
     .lastusers {
         height: 25em;
         width: 90%;

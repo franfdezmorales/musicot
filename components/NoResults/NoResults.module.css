@@ -16,7 +16,7 @@
     font-size: 2em;
 }
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 1400px) { 
     .text {
         color: var(--color-green);
         font-size: 2em;

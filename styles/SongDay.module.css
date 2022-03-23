@@ -32,7 +32,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 1400px) { 
     .songday {
         padding: 3em 0; 
         display: flex;

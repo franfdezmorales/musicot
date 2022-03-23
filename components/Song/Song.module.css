@@ -41,7 +41,7 @@
     font-size: 0.6em;
 }
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 1400px) { 
     .song {
         min-height: 3.5em;
         background-color: var(--color-light-black);

@@ -41,7 +41,7 @@
     color: var(--color-green);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1400px) {
     .songs {
         height: 40em;
         width: 90%;
