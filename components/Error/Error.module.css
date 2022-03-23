@@ -20,3 +20,17 @@
     color: var(--color-green);
     font-size: 0.75em;
 }
+
+@media only screen and (max-width: 768px) { 
+    .textError {
+        color: var(--color-green);
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .textErrorSecondary {
+        color: var(--color-green);
+        font-size: 0.75em;
+        text-align: center;
+    }
+}

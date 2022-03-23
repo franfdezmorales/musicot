@@ -16,3 +16,10 @@
     font-size: 2em;
 }
 
+@media only screen and (max-width: 768px) { 
+    .text {
+        color: var(--color-green);
+        font-size: 2em;
+        text-align: center;
+    }
+}
