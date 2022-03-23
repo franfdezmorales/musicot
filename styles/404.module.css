@@ -1,0 +1,56 @@
+.custom {
+    padding: 3em 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em; 
+}
+
+.icon {
+    color: var(--color-green);
+    font-size: 4em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em; 
+}
+
+.link {
+    margin-left: 0.5em;
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: var(--color-green);
+    color: var(--color-black);
+    border-radius: 0.25em;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+.textError {
+    color: var(--color-green);
+    font-size: 2em;
+}
+
+.textErrorSecondary {
+    color: var(--color-green);
+    font-size: 0.75em;
+}
+
+@media only screen and (max-width: 1400px) { 
+    .textError {
+        color: var(--color-green);
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .textErrorSecondary {
+        color: var(--color-green);
+        font-size: 0.75em;
+        text-align: center;
+    }
+}
